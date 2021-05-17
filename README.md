@@ -17,3 +17,5 @@ ddinajpurcovid19 uses a number of open source projects to work properly:
 - [WB Health and Family Dept](https://www.wbhealth.gov.in/) - For hospitals bed information
 - [Freepik](https://www.freepik.com/) - for images
 - [Pexels](https://www.pexels.com/) - for images
+
+### License : _Apache License 2.0_ ###
