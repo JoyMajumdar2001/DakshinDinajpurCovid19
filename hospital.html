@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakshin Dinajpur Corona Stats</title>
+    <meta name="description" content="Dakshin Dinajpur Covid Hospitals and Safe Homes">
+    <meta name="keywords" content="Balurghat, Balurghat Covid, Balurghat Corona,
+   Dakshin Dinajpur Covid, Gangarampur Corona, Corona, Covid, Balurghat Safe Home, Dinajpur Covid Hospital">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ffffff;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    DD Covid19
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vaccine.html">Vaccines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hospitals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="emergency.html">Emergency</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container align-items-center text-center">
+        <h1 class="text-blue mt-5 alert alert-primary">Dakshin Dinajpur Hospitals & Beds</h1>
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto mt-5">
+        <button class="btn btn-success" type="button"
+            onclick="window.location.href='http://iccma.wbhealth.gov.in/public.php';">Online Form for Admission in Safe
+            Homes</button>
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="text-success">Hospitals:</h3>
+    </div>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card card border-success bg-light">
+                    <img src="https://image.freepik.com/free-vector/doctor-nurse-giving-medical-care-patient-bed-isolated-flat-illustration_74855-10593.jpg"
+                        class="card-img-top" alt="Hospitals">
+                    <div class="card-body">
+                        <h3 class="card-title text-success mb-3">Natya Utkarshya Kendra</h3>
+                        <h5 class="text-warning card-text border border-warning p-2"><strong>Phone :</strong> 9064140556
+                        </h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Male</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tmen">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vmen">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Female</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="twomen">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vwomen">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Unisex</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tuni">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vuni">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Total</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="total">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vacant">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted h6"><strong>Address: </strong>Beltala Park, Balurghat , DAKSHIN
+                            DINAJPUR</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-success bg-light">
+                    <img src="https://image.freepik.com/free-vector/doctor-nurse-giving-medical-care-patient-bed-isolated-flat-illustration_74855-10593.jpg"
+                        class="card-img-top" alt="Hospitals">
+                    <div class="card-body">
+                        <h3 class="card-title text-success mb-3">Gangarampur Sub Divisional Hospital</h3>
+                        <h5 class="text-warning card-text border border-warning p-2"><strong>Phone :</strong>
+                            9593165100</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Male</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tmen1">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vmen1">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Female</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="twomen1">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vwomen1">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Unisex</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tuni1">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vuni1">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Total</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="total1">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vacant1">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted h6"><strong>Address: </strong>Kaldighi, Gangarampur , DAKSHIN
+                            DINAJPUR</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3 class="text-success">Safe Homes:</h3>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card border-success bg-light">
+                    <img src="https://image.freepik.com/free-vector/patients-doctors-meeting-waiting-clinic-hall-hospital-interior-illustration-with-reception-person-wheelchair-visiting-doctor-office-medical-examination-consultation_74855-8496.jpg"
+                        class="card-img-top" alt="Hospitals">
+                    <div class="card-body">
+                        <h2 class="card-title text-success">BALURGHAT YOUTH HOSTEL</h2>
+                        <h5 class="text-warning card-text border border-warning p-2"><strong>Phone :</strong>
+                            9339676475</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Male</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tmen2">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vmen2">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Female</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="twomen2">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vwomen2">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Unisex</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tuni2">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vuni2">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Total</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="total2">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vacant2">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted h6"><strong>Address: </strong>MANGALPUR, BALURGHAT , DAKSHIN
+                            DINAJPUR</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success bg-light">
+                    <img src="https://image.freepik.com/free-vector/patients-doctors-meeting-waiting-clinic-hall-hospital-interior-illustration-with-reception-person-wheelchair-visiting-doctor-office-medical-examination-consultation_74855-8496.jpg"
+                        class="card-img-top" alt="Hospitals">
+                    <div class="card-body">
+                        <h2 class="card-title text-success">BUNIADPUR ITI</h2>
+                        <h5 class="text-warning card-text border border-warning p-2"><strong>Phone :</strong>
+                            9733327309</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Male</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tmen3">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vmen3">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Female</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="twomen3">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vwomen3">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Unisex</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="tuni3">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vuni3">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="list-group text-center">
+                                            <li class="list-group-item active h3" aria-current="true">Total</li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2" id="total3">Loading..</li>
+                                                    <li class="list-group-item">Total Beds</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item h2 text-success" id="vacant3">Loading..</li>
+                                                    <li class="list-group-item text-success">Vacant Beds</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted h6"><strong>Address: </strong>BUNIADPUR , DAKSHIN DINAJPUR</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-black" style="background-color: #ffffff;">
+        <div class="container-fluid mt-3 pb-0">
+            <section class="">
+                <button type="button" class="btn btn-outline-primary"
+                    onclick="window.location.href='https://www.wbhealth.gov.in/';">West Beangal Health
+                    Department</button>
+                <button type="button" class="btn btn-outline-success"
+                    onclick="window.location.href='https://apisetu.gov.in/index.php';">API Setu</button>
+                <button type="button" class="btn btn-outline-dark"
+                    onclick="window.location.href='https://www.pexels.com/';">Pexels</button>
+                <button type="button" class="btn btn-outline-warning"
+                    onclick="window.location.href='https://www.chartjs.org/';">Chart Js</button>
+                <button type="button" class="btn btn-outline-info"
+                    onclick="window.location.href='https://www.freepik.com/';">Freepik</button>
+            </section>
+        </div>
+        <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.1);">
+            Made in India | © 2021 Copyright: Joysankar Majumdar
+        </div>
+    </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <script src="fbase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
